@@ -1,38 +1,464 @@
-.App {
-  text-align: center;
+* {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 1140px !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none !important;
+  outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* ========= Navbar Style Start =========== */
+
+.navbar-txt {
+  letter-spacing: 2px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-clr {
+  background-color: #fb3e3e;
+  color: #fff;
+  font-weight: 400;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link-clr {
+  color: #a6a7ab;
+  padding: 15px 0;
+  font-size: 15px;
+  font-weight: 700;
 }
+
+.link-clr:hover {
+  color: #fff;
+}
+
+/* ========= Navbar Style End =========== */
+
+/* ========= Home Style Start ========== */
+
+.bg-home {
+  background: url("http://dorsin.react.themesbrand.com/assets/images/bg-home.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-gradient {
+  background: linear-gradient(to right, #512da8, #711e72);
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.home-main {
+  width: 100%;
+  height: 90%;
+}
+
+.home-heading h1 {
+  margin: 0px 19% 35px 19%;
+  font-size: 46px;
+  line-height: 64px;
+}
+
+.media-main {
+  border-radius: 50%;
+  border: 1px solid transparent;
+  width: 82px;
+  height: 82px;
+  margin: 20px auto;
+}
+
+.media-btn {
+  color: #fb3e3e;
+  border-color: #fb3e3e !important;
+  border: 2px solid;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 56px;
+  display: block;
+  font-size: 20px;
+  margin: 10px auto 0px auto;
+}
+
+.fa-play {
+  margin-left: 3px;
+}
+
+/* ========= Home Style End ========== */
+
+/* ========= Section 2 Style Start ========== */
+.section2-heading h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.line {
+  width: 50px;
+  height: 2px;
+  margin: 0px auto;
+  border-bottom: solid 3px #fb3e3e;
+}
+
+.section2-para p {
+  color: #95a0ab;
+  font-size: 14.4px;
+  line-height: 24px;
+}
+
+.services {
+  padding: 15px;
+}
+
+.effect {
+  transition: all 0.3s ease-in-out;
+}
+
+.effect:hover {
+  transform: translateY(-20px);
+}
+
+.services i {
+  font-size: 28px;
+  height: 68px;
+  width: 68px;
+  margin-bottom: 15px;
+  line-height: 68px;
+  color: #fb3e3e;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+}
+
+.services h5 {
+  font-weight: 500;
+}
+
+.para {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+/* ========= Section 2 Style End ========== */
+
+/* ========= Section 3 Style Start ========== */
+
+.sec3-main {
+  padding: 80px 0;
+}
+
+.features-heading h3 {
+  margin-bottom: 25px;
+  line-height: 36px;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.list {
+  padding: 1rem;
+  color: #95a0ab;
+}
+
+.list li {
+  font-size: 15px;
+  line-height: 24px;
+  padding: 7px 0px 7px 20px;
+}
+
+.list li::marker {
+  color: #fb3e3e;
+  font-size: 25px;
+}
+
+.btn {
+  border-color: #fb3e3e !important;
+  padding: 10px 23px !important;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-10px);
+}
+
+.btn-primary {
+  background-color: #fb3e3e !important;
+}
+
+.btn i {
+  font-size: 10px;
+}
+
+.features-img {
+  max-width: 500px;
+  margin: 0 0 0 auto;
+}
+
+.features-img img {
+  max-width: 100%;
+}
+/* ========= Section 3 Style End ========== */
+
+/* ========= Section 4 Style Start ========== */
+
+.sec4-bg {
+  background: url("http://dorsin.react.themesbrand.com/assets/images/img-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0px;
+  position: relative;
+}
+
+.home-gradient {
+  background: linear-gradient(to right, #512da8, #711e72);
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.sec4-content {
+  padding-top: 140px;
+}
+
+.sec4-heading h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.sec4-desc {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.btn-white {
+  background-color: #fff !important;
+  border-color: #fff !important;
+}
+
+/* ========= Section 4 Style End ========== */
+
+/* ========= Section 5 Style Start ========== */
+
+.price-box {
+  padding: 50px 40px 50px 40px;
+  border: 1px solid #ecf0f5;
+  border-radius: 8px;
+  box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+}
+
+.price-box h6 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.price-box h1 {
+  font-size: 40px;
+  padding-top: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.bill {
+  font-size: 12px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #95a0ab;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.price-border {
+  width: 100%;
+
+  margin-top: 35px;
+  border-bottom: 2px solid #ecf0f5;
+}
+
+.price-feature p {
+  font-size: 14.4px;
+  line-height: 24px;
+  padding-top: 5px;
+}
+
+.price-feature span {
+  color: #fb3e3e;
+  font-weight: 600;
+}
+/* ========= Section 5 Style End ========== */
+
+/* ========= Section 6 Style Start ========== */
+
+.crew-box {
+  border-bottom: 1px solid #ecf0f5;
+}
+
+.crew-img-main img {
+  width: 100%;
+}
+
+.crew-name {
+  font-size: 16px;
+  padding-top: 20px;
+  margin-bottom: 7px;
+}
+
+.crew-position {
+  font-size: 13px;
+  color: #a8aeb4;
+}
+
+/* ========= Section 6 Style End ========== */
+
+/* ========= Section 7 Style Start ========== */
+
+.sec7-main {
+  padding: 80px 0;
+}
+
+.review-img-main img {
+  margin: -40px auto;
+  height: 68px;
+  width: 68px;
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  max-width: 100%;
+}
+
+.review-txt {
+  border: 1px solid #ecf0f5;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+}
+
+.review-txt p {
+  padding: 60px 25px 30px;
+  line-height: 24px;
+  font-style: italic;
+  color: #95a0ab;
+  font-size: 14.4px;
+  margin: 0;
+}
+
+.review-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.review-sub {
+  color: #95a0ab;
+}
+/* ========= Section 7 Style End ========== */
+
+/* ========= Section 8 Style Start ========== */
+
+.sec7-bg {
+  background: url("http://dorsin.react.themesbrand.com/assets/images/img-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0px;
+  position: relative;
+}
+
+/* ========= Section 8 Style End ========== */
+
+/* ========= Section 9 Style End ========== */
+
+.sec9-main {
+  background-color: rgb(248, 249, 250);
+}
+
+.blog-content h5 {
+  color: #95a0ab;
+  font-size: 14px;
+}
+
+.blog-content h4 {
+  font-size: 18px;
+}
+
+.blog-content p {
+  font-size: 14px;
+  color: #95a0ab;
+}
+
+.blog-txt-link {
+  color: #272a33;
+  transition: all 0.5s;
+}
+
+.blog-txt-link:hover {
+  color: #fb3e3e;
+}
+
+.blog-read {
+  color: #fb3e3e;
+  font-size: 15px;
+  transition: all 0.5s;
+}
+
+.blog-read:hover {
+  color: #272a33;
+}
+
+/* ========= Section 9 Style End ========== */
+
+/* ========= Section 10 Style End ========== */
+
+.details-main {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.deatils-heading {
+  font-weight: 600;
+}
+
+.details-sub {
+  color: #95a0ab;
+}
+
+.inp-style {
+  font-size: 14px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
+  height: 50px;
+  box-shadow: none !important;
+}
+
+.form-control:focus {
+  border-color: none !important;
+  outline: none !important;
+}
+
+.txt:focus{
+  border-color: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* ========= Section 10 Style End ========== */
